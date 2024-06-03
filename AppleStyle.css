@@ -1,0 +1,368 @@
+.flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(76 75 75);
+    /* position: absolute; */
+    /* position: fixed; */
+}
+
+.navbarlogo {
+    height: 15px;
+    width: 15px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    font-size: 0.8rem;
+}
+
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 5px;
+    margin: 8px 18px;
+    color: rgb(205, 201, 201);
+}
+
+.advertise {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(31, 30, 30);
+    height: 45px;
+    font-size: 14px;
+}
+
+/* Home Section  */
+.home {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* padding: 10px 10px; */
+    height: 600px;
+    /* position: relative; */
+}
+
+.home::before {
+    content: "";
+    background: url('Apple_imgs/iphonebg2.jpg') no-repeat center center/cover;
+    /* background-attachment: fixed; */
+    /* background-position: -1110px 10px;    */
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 660px;
+    z-index: -1;
+    opacity: 1.2;
+    top: 36px;
+    left: 0px;
+}
+
+.home h1 {
+    margin-top: 20px;
+}
+
+.h-primary {
+    color: white;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.h-third {
+    color: white;
+    text-align: center;
+    font-size: 2.0rem;
+    font-weight: 100;
+}
+
+.btn {
+    border: 1px solid #2997ff;
+    border-radius: 30px;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    background: #0071e3;
+    cursor: pointer;
+    color: white;
+    width: 140px;
+    font-size: 17px;
+}
+
+.btn:hover {
+    background-color: #107ae4;
+}
+
+#btn2 {
+    background-color: black;
+    color: blue;
+    width: 78px;
+}
+
+#btn2:hover {
+    background-color: #0071e3;
+    color: white;
+}
+
+/* iphone 15 section  */
+.iphone15 {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    background: url('Apple_imgs/iphone15.jpg') no-repeat center center/cover;
+    height: 600px;
+}
+
+.h-primary15 {
+    margin-top: 50px;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.h-third2 {
+    color: black;
+    text-align: center;
+    font-size: 2.0rem;
+    font-weight: 400;
+}
+
+#btn2iphone15 {
+    background-color: white;
+    color: blue;
+    width: 78px;
+}
+
+#btn2iphone15:hover {
+    background-color: #0071e3;
+    color: white;
+}
+
+/* iPad section  */
+.ipad {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    background: url('Apple_imgs/ipadbg.jpg') no-repeat center center/cover;
+    height: 600px;
+}
+
+.h-primaryipad {
+    margin-top: 50px;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+/* products section  */
+.productbox {
+    display: grid;
+    justify-content: center;
+    grid-template-areas:
+        'topleft topright'
+        'centerleft centerright'
+        'bottomleft bottomright';
+        grid-gap: 1rem;
+}
+
+#topleft {
+    grid-area: topleft;
+    display: flex;
+    justify-content:flex-end;
+    /* align-items: flex-end; */
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: url('Apple_imgs/topleftbg.jpg') no-repeat center center/cover;
+}
+#topleft p{
+    align-content: center;
+    color: white;
+    font-size: 21px;
+    /* margin-bottom: 123px; */
+}
+
+#topright {
+    grid-area: topright;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('Apple_imgs/toprightbg.jpg') no-repeat center center/cover;
+}
+#topright p{
+    align-content: center;
+    font-size: 21px;
+    /* margin-bottom: 123px; */
+}
+.btngrid {
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    background: black;
+    cursor: pointer;
+    color: white;
+    width: 140px;
+    font-size: 17px;
+}
+#btn2grid{
+    color: black;
+    background-color: transparent;
+    width: 78px;
+}
+
+#btn2grid:hover {
+    background-color: black;
+    color: white;
+}
+.air{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-size: xxx-large;
+    font-style: normal;
+    color: #2f2fc3;
+}
+
+#centerleft {
+    grid-area: centerleft;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('Apple_imgs/centerleft.jpg') no-repeat center center/cover;
+}
+
+#centerright {
+    grid-area: centerright;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('Apple_imgs/centerright.jpg') no-repeat center center/cover;
+}
+
+#bottomleft {
+    grid-area: bottomleft;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('Apple_imgs/bottomleft.jpg') no-repeat center center/cover;
+}
+
+#bottomright {
+    grid-area: bottomright;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('Apple_imgs/bottomright.jpg') no-repeat center center/cover;
+}
+.box{
+    /* border: 2px solid black; */
+    height: 590px;
+    width: 606px;
+}
+/* Footer section  */
+footer{
+    background-color: rgb(245, 245, 247);
+}
+.footer-1{
+    margin-left: 150px;
+    margin-right: 150px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 16px;
+}
+
+/* Footer down section  */
+.down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 380px;
+}
+.section-col-1{
+    margin-inline-end: 20px;
+}
+.section-col-2{
+    margin-inline-end: 20px;
+}
+.section-col-3{
+    margin-inline-end: 20px;
+}
+#list{
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    margin-bottom: .8em;
+    font-size: 1em;
+    text-align: inherit;
+    font-size: 12px;
+    width: 160px;
+}
+#list a{
+    list-style: none;
+    text-decoration: none;
+}
+.heading{
+    font-size: 12px;
+    line-height: 1.3333733333;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.8em;
+    margin-inline-end: 20px;
+    outline: none;
+}
+#lastdiv{
+    list-style: none;
+    font-size: 12px;
+    font-weight: 400;   
+    display: flex; 
+    margin-right: 6px;
+}
+.last{
+    margin-left: 150px;
+    margin-right: 150px;
+    /* display: flex; */
+}
+.copyrightsdiv{
+    display: flex;
+    justify-content: space-evenly;
+}
